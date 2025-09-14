@@ -15,10 +15,12 @@ public class Q5 {
         Circle co = new Circle(ro);
         Circle ci = new Circle(ri);
 
-        int areaO = co.computeArea();
-        int areaI = ci.computeArea();
-        int area = areaO - areaI;
+        double areaO = co.computeArea();
+        double areaI = ci.computeArea();
+        double area = areaO - areaI;
 
         System.out.println("Area of the circular region is: " + area);
+        System.out.println("Circumference of outer circle: " + co.computeCircumference());
+        System.out.println("Circumference of inner circle: " + ci.computeCircumference());
     }
 }
